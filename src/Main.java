@@ -6,9 +6,13 @@ public class Main {
         
         Universitario aluno1 = new Universitario("Carlos Abraão", 1, trab1);
         Universitario aluno2 = new Universitario("Ricardo Vinicius", 2, trab1);
+        Universitario aluno3 = new Universitario("Nicolas Ribeiro", 3, trab1);
+        Universitario aluno4 = new Universitario("Mikael Casimiro", 4, trab1);
 
         trab1.inserirAlunos(aluno1);
         trab1.inserirAlunos(aluno2);
+        trab1.inserirAlunos(aluno3);
+        trab1.inserirAlunos(aluno4);
 
         Biblioteca biblioteca = new Biblioteca();
 

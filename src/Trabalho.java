@@ -84,7 +84,7 @@ public class Trabalho {
         return comentarios;
     }
     
-     public Professor getProfOrientador() 
+    public Professor getProfOrientador()
      {
         return profOrientador;
     }
@@ -92,6 +92,14 @@ public class Trabalho {
     public void setProfOrientador(Professor profOrientador) 
     {
         this.profOrientador = profOrientador;
+    }
+
+    public ArrayList<Universitario> getListaAlunos() {
+        return listaAlunos;
+    }
+
+    public void setListaAlunos(ArrayList<Universitario> listaAlunos) {
+        this.listaAlunos = listaAlunos;
     }
 
     /**
@@ -117,6 +125,12 @@ public class Trabalho {
      */
     public void inserirAlunos(Universitario aluno)
     {
-        listaAlunos.add(aluno);
+        if (listaAlunos.size() < 4)
+        {
+            listaAlunos.add(aluno);
+        } else
+        {
+            System.out.println("O grupo já possui o número máximo de integrantes.");
+        }
     }
 }
